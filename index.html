@@ -1,58 +1,23 @@
+<!-- 前面・背面カメラにアクセスできるHTMLのcapture属性 -->
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>犬の記録</title>
-    <link rel="stylesheet" href="CSS/index.css" />
-  </head>
-  <body>
-    <header id="header">
-      <h1>犬の記録</h1>
-    </header>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>前面・背面カメラにアクセスできるHTMLのcapture属性</title>
 
-    <main>
-      <section id="main-visual">
-        <img src="img/main-visual.JPG" alt="犬の画像メインビジュアル" />
-      </section>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<label for="environment">environmentの場合：</label>
+	<br>
+	<input type="file" id="environment" capture="environment" accept="video/*">
+	<br><br>
+	<label for="user">userの場合：</label>
+	<br>
+	<input type="file" id="user" capture="user" accept="image/*">
 
-      <section id="record">
-        <div class="container">
-          <ul>
-            <li>
-              <img src="img/2021-10-02.JPG" alt="2021年ｎ10月2日の犬の画像" />
-              <h2>2021年10月2日</h2>
-              <p>生後74日目</p>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <img src="img/2021-10-02.JPG" alt="2021年ｎ10月2日の犬の画像" />
-              <h2>2021年10月2日</h2>
-              <p>生後74日目</p>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <img src="img/2021-10-02.JPG" alt="2021年ｎ10月2日の犬の画像" />
-              <h2>2021年10月2日</h2>
-              <p>生後74日目</p>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <img src="img/2021-10-02.JPG" alt="2021年ｎ10月2日の犬の画像" />
-              <h2>2021年10月2日</h2>
-              <p>生後74日目</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-			<footer id=footer>
-				<small>(c) Daisuke Hirose</small>
-			</footer>
-    </main>
-  </body>
+	<script src="script.js"></script>
+</body>
 </html>
